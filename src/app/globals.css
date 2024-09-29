@@ -2,19 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-.nbs {
-  white-space: nowrap;
+.button:hover span {
+  animation: wave 0.8s ease-in-out infinite;
 }
 
-.sidepanel__hl {
-  color: #ff6a44;
-  font-weight: 600;
-}
-
-.sidepanel__hl svg {
-  color: rgba(255,106,68,.2);
-}
-
-.sidepanel__hl path {
-  stroke-dashoffset: 0;
+@keyframes wave {
+  0% { transform: rotate(0deg); }
+  20% { transform: rotate(-10deg); }
+  40% { transform: rotate(12deg); }
+  60% { transform: rotate(-8deg); }
+  80% { transform: rotate(8deg); }
+  100% { transform: rotate(0deg); }
 }
