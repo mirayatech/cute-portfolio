@@ -55,7 +55,7 @@ export default function Page() {
   }, []);
 
   return (
-    <div className="flex lg:flex-row flex-col justify-center items-start lg:items-center p-8 gap-8">
+    <div className="flex lg:flex-row flex-col justify-center items-start lg:items-center p-8 gap-14">
       <img
         src="/img.jpg"
         alt="background"
