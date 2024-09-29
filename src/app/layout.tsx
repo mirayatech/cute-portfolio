@@ -17,10 +17,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} bg-[rgb(243,240,255)] flex justify-center items-center lg:h-screen relative`}
+        className={`${inter.className} bg-primaryBackground flex justify-center items-center lg:h-screen relative`}
       >
         {children}
-        <div className="max-lg:hidden circlePosition w-[300px] h-[300px] bg-[#c0c1ff] rounded-[100%] absolute z-1 bottom-[-100px] left-[-100px] blur-[90px]"></div>
+        <div className="max-lg:hidden circlePosition w-[300px] h-[300px] bg-circleBackground rounded-[100%] absolute z-1 bottom-[-100px] left-[-100px] blur-[90px]"></div>
       </body>
     </html>
   );
